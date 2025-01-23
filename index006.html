@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style006.css">
+    <title>Service de Boisson</title>
+</head>
+
+<body class="bodyCardOne">
+
+    <h1 class="titleBoisson">
+        Choisissez Votre Boisson.
+    </h1>
+
+    <img class="illustrationOne" src="images/tasse_de_cafe_001.jpg" alt="tasse de café">
+
+    <section class="bodyCardThree">
+        <form class="formulaireBoisson" id="formulaireBoisson">
+            <section class="typeBoisson">
+                <label for="typeBoisson"> Choix de la boisson <span class="etoile">*</span>:</label>
+                <select class="choix" id="typeBoisson">
+                    <option value=""> Votre choix </option>
+                    <option value="Eau">Eau</option>
+                    <option value="Café">Café</option>
+                    <option value="Thé">Thé</option>
+                </select>
+            </section>
+
+            <section class="temperature">
+                <label for="temperature"> Température <span class="etoile">*</span>:</label>
+                <select class="choix" id="temperature">
+                    <option value=""> Votre choix </option>
+                    <option value="plate"> Plate </option>
+                    <option value="chaud(e)">Chaude</option>
+                    <option value="glacé">Glacé</option>
+                </select>
+            </section>
+
+            <section class="sucre">
+                <label for="sucre"> Préférence du sucre <span class="etoile">*</span>:</label>
+                <select class="choix" id="sucre">
+                    <option value=""> Votre choix </option>
+                    <option value="sucré">Sucré</option>
+                    <option value="sans sucre">Sans sucre</option>
+                </select>
+            </section>
+        </form>
+
+        <button class="btnValide" type="button" onclick="validerBoisson()">Valider</button>
+
+        <section class="ok">
+            <section class="validation">
+                <p class="message" id="message"></p>
+            </section>
+        </section>
+    </section>
+
+    <script>
+        function validerBoisson() {
+            var typeBoisson = document.getElementById("typeBoisson").value;
+            var temperature = document.getElementById("temperature").value;
+            var sucre = document.getElementById("sucre").value;
+            var message = document.getElementById("message");
+
+            switch (true) {
+                case (typeBoisson === "" || temperature === "" || sucre === ""):
+                    message.innerText = "Veuillez sélectionner toutes les options. Merci de votre attention.";
+                    break;
+                default:
+                    message.innerText = "Votre délicieux  " + typeBoisson + " " + temperature + " " + sucre + ", sera prêt(e) dans quelques instants. Merci de profiter de ces moments de détente.";
+                    break;
+            }
+
+            // Réinitialiser le formulaire après 60 secondes
+            setTimeout(function () {
+                document.getElementById("formulaireBoisson").reset();
+                message.innerText = "";
+                message.classList.add("clignote");
+            }, 60000);
+        }
+    </script>
+</body>
+
+</html>

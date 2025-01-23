@@ -1,0 +1,173 @@
+1. **Bouton de soumission** :
+<button type="submit">Submit</button>
+
+<br>
+<br>
+
+2. **Bouton de réinitialisation** :
+<button type="reset">Reset</button>
+
+<br>
+<br>
+
+3. **Bouton standard** :
+<button type="button">Click Me</button>
+
+<br>
+<br>
+
+4. **Bouton avec image** :
+<button type="button"><img src="image.jpg" alt="Image Button"></button>
+
+<br>
+<br>
+
+5. **Bouton désactivé** :
+<button type="button" disabled>Disabled Button</button>
+
+<br>
+<br>
+
+6. **Bouton avec icône**
+<br>
+(utilisant une bibliothèque d'icônes comme Font Awesome) :
+<button type="button"><i class="fa fa-home"></i> Home</button>
+
+<br>
+<br>
+
+-----------------------------------------------------------------------------
+<br>
+<br>
+
+Association avec un label
+
+En HTML, vous pouvez associer des labels aux boutons pour améliorer l'accessibilité et la
+sémantique de votre code. Voici comment vous pouvez le faire pour différents types de boutons :
+
+<br>
+<br>
+
+1. **Bouton de soumission** :
+
+<label for="submitBtn">Submit Form:</label>
+<button id="submitBtn" type="submit">Submit</button>
+
+<br>
+<br>
+
+2. **Bouton de réinitialisation** :
+
+<label for="resetBtn">Reset Form:</label>
+<button id="resetBtn" type="reset">Reset</button>
+
+<br>
+<br>
+
+3. **Bouton standard** :
+
+<label for="standardBtn">Click Here:</label>
+<button id="standardBtn" type="button">Click Me</button>
+
+<br>
+<br>
+
+4. **Bouton avec image** :
+
+<label for="imageBtn">Image Button:</label>
+<button id="imageBtn" type="button"><img src="image.jpg" alt="Image Button"></button>
+
+<br>
+<br>
+
+5. **Bouton désactivé** :
+
+<label for="disabledBtn">Disabled Button:</label>
+<button id="disabledBtn" type="button" disabled>Disabled Button</button>
+
+<br>
+<br>
+
+6. **Bouton avec icône**<br>
+(utilisant une bibliothèque d'icônes comme Font Awesome) :
+
+<label for="iconBtn">Home Button:</label>
+<button id="iconBtn" type="button"><i class="fa fa-home"></i> Home</button>
+
+<br>
+<br>
+
+-----------------------------------------------------------------------------
+
+<br>
+<br>
+
+Pour associer un bouton à une fonction JavaScript, vous pouvez utiliser l'attribut `onclick`
+dans la balise <`button>. Voici un exemple simple :
+
+    <br>
+    <br>
+
+    ```
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Button Example</title>
+    </head>
+
+    <body>
+        <button onclick="myFunction()">Click Me</button>
+
+        <script>
+            function myFunction() {
+                alert("Button clicked!");
+            }
+        </script>
+    </body>
+
+    </html>
+
+    ```
+
+    <br>
+    <br>
+
+    Dans cet exemple, lorsque vous cliquez sur le bouton "Click Me", la fonction `myFunction()`
+    est appelée et affiche une alerte avec le message "Button clicked!".
+
+    Vous pouvez également ajouter des écouteurs d'événements en JavaScript pour associer
+    une fonction à un bouton :
+
+    <br>
+    <br>
+
+    ```
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Button Example</title>
+        <script>
+            function myFunction() {
+                alert("Button clicked!");
+            }
+
+            window.onload = function () {
+                document.getElementById("myButton").addEventListener("click", myFunction);
+            };
+        </script>
+    </head>
+
+    <body>
+        <button id="myButton">Click Me</button>
+    </body>
+
+    </html>
+    ```
+    <br>
+    <br>
+
+    Dans cet exemple, l'écouteur d'événement `addEventListener` est utilisé pour associer la fonction `myFunction()` au
+    bouton avec l'ID `myButton`.

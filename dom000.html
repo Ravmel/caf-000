@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h2 id="titre">Qu'est-ce que le DOM?</h2>
+    <p id="paragraphe">Le DOM est génial!</p>
+
+    <button onclick="changerTexte()">Cliquez ici</button>
+
+    <script>
+      function changerTexte() {
+        let paragraphe = document.getElementById("paragraphe");
+        paragraphe.innerHTML = "Oui, vraiment génial!";
+        paragraphe.style.color = "red";
+      }
+    </script>
+
+  </body>
+</html>

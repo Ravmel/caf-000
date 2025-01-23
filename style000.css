@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --dark_brown: #654321;
+    --black: #000000;
+    --white: #ffffff;
+    --yellow: #ffff00;
+    --cadre_global: #00eeff;
+    --choco_fort: #77392a;
+    --choco_moyen: #bc906e;
+    --choco_lege: #fdd9ac;
+    --red_light: #f66262;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: var(--dark_brown);
+    color: var(--choco_moyen);
+    border: 5px solid var(--cadre_global);
+    font-size: 3rem;
+}
+
+.bodyCardOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.titleBoisson {
+    font-size: 3rem;
+    color: var(--choco_moyen);
+    margin-bottom: 10px;
+}
+
+.illustrationOne {
+    width: 15%;
+    height: auto;
+    border: 5px solid var(--choco_moyen);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.bodyCardThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.formulaireBoisson {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.typeBoisson,
+.temperature,
+.sucre {
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 2rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+option {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+
+.btnValide {
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--choco_moyen);
+}
+
+.btnValide:hover {
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--choco_lege);
+}
+
+.ok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid var(--white); */
+}
+
+.validation {
+    margin-top: 10px;
+    /* border: 3px solid var(--black); */
+}
+
+.message {
+    width: 1350px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--yellow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .choix {
+        font-size: 0.9em;
+    }
+
+    .btnValide {
+        font-size: 0.9em;
+    }
+
+    .message {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2em;
+    }
+
+    .choix {
+        font-size: 0.8em;
+    }
+
+    .btnValide {
+        font-size: 0.8em;
+    }
+
+    .message {
+        font-size: 0.8em;
+    }
+}

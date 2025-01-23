@@ -1,0 +1,45 @@
+On utilise `document.getElementById` en JavaScript
+<br>
+pour accéder à un élément HTML spécifique par son identifiant unique (ID).
+<br>
+Cela permet de manipuler cet élément, par exemple
+<br>
+pour changer son contenu, son style, ou pour ajouter des événements. Voici un exemple simple :
+<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body style="background-color: black; color: bisque;">
+
+    <div id="monElement" style="cursor: pointer; ;">Mon Element</div>
+    <script>
+        // Supposons que vous avez un élément HTML avec l'ID "monElement"
+        var element = document.getElementById("monElement");
+        
+        // Changer le contenu de l'élément
+        element.innerHTML = "Nouveau contenu";
+        
+        // Changer le style de l'élément
+        element.style.color = "yellowgreen";
+        
+        // Ajouter un événement à l'élément
+        element.addEventListener("click", function() {
+            alert("Élément cliqué !");
+        });
+        
+        </script>
+</body>
+</html>
+
+
+<br><br>
+
+En résumé, `document.getElementById`
+<br>
+ est utilisé pour sélectionner et manipuler des éléments HTML
+de manière dynamique.

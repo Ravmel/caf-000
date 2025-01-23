@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style003.css">
+    <title>Service de Boisson</title>
+</head>
+
+<body class="bodyCardOne">
+    <section class="title">
+        <h1 class="titleOne">Choisissez votre Boisson</h1>
+    </section>
+
+    <section class="bodyCardThree">
+        <form class="formulaireBoisson" id="formulaireBoisson">
+            <section class="typeBoisson">
+                <label for="typeBoisson"> Choix de la boisson<span class="etoile">*</span> : </label>
+                <select class="choix" id="typeBoisson">
+                    <option value=""> Votre choix </option>
+                     <option value="Eau">Eau</option>
+                    <option value="Café">Café</option>
+                    <option value="Thé">Thé</option>
+                </select>
+            </section>
+
+            <section class="temperature">
+                <label for="temperature"> Température<span class="etoile">*</span> : </label>
+                <select class="choix" id="temperature">
+                    <option value=""> Votre choix </option>
+                    <option value="plate"> Plate </option>
+                    <option value="chaud">Chaude</option>
+                    <option value="glacé">Glacé</option>
+                </select>
+            </section>
+
+            <section class="sucre">
+                <label for="sucre"> Préférence du sucre<span class="etoile">*</span> : </label>
+                <select class="choix" id="sucre">
+                    <option value=""> Votre choix </option>
+                    <option value="sucré">Sucré</option>
+                    <option value="sans sucre">Sans sucre</option>
+                </select>
+            </section>
+        </form>
+
+        <section class="validation">
+            <button class="btnValide" type="button" onclick="validerBoisson()">Valider</button>
+            <p class="message" id="message"></p>
+        </section>
+
+        <section class="imageDeco">
+            <img class="illustrationOne" src="images/tasse_de_cafe_001.jpg" alt="tasse de café">
+        </section>
+    </section>
+
+    <script>
+        function validerBoisson() {
+            var typeBoisson = document.getElementById("typeBoisson").value;
+            var temperature = document.getElementById("temperature").value;
+            var sucre = document.getElementById("sucre").value;
+            var message = document.getElementById("message");
+
+            switch (true) {
+                case (typeBoisson === "" || temperature === "" || sucre === ""):
+                    message.innerText = "Veuillez sélectionner toutes les options.";
+                    break;
+                default:
+                    message.innerText = "OK pour : " + typeBoisson + " " + temperature + " " + sucre + ".";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

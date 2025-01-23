@@ -1,0 +1,125 @@
+1. Bouton soumission:
+<button type="submit">Submit</button>
+
+<br><br>
+2. Bouton reinitialisation:
+<button type="reset">reset</button>
+
+<br><br>
+
+3. Bouton standard :
+<button type="button">Click Me</button>
+
+<br><br>
+
+4. Bouton avec image :
+<button type="button"><img src="images.jpg" alt="bouton image"></button>
+
+<br><br>
+
+5. Bouton désactivé :
+<button type="button" disabled>disabled</button>
+
+<br><br>
+
+6.Bonton avec icône :
+<button type="button"><i class="fa fa-home"></i>fa-home</button>
+
+<br><br>
+
+-----------------------------------------------------------------------------
+
+<br><br>
+
+Bouton associé à un label sur html
+
+<br><br>
+
+1. Bouton de soumission :
+<label for="submitBnt">Submit From</label>
+<button id="submitBnt" type="submit">Submit</button>
+
+<br><br>
+
+2. Bouton de réinitialisation :
+<label for="resetBnt">Reset From</label>
+<button id="resetBnt" type="reset">Reset</button>
+
+<br><br>
+
+3. Bouton standard :
+<label for="santardBnt">Click me from</label>
+<button id="standardBtn" type="button">Click Me</button>
+
+<br><br>
+
+4. Bouton image :
+<label for="imageBtn">Clique sur l'image</label>
+<button id="imageBtn" type="button"><img src="image.jpg" alt="image btn"></button>
+
+<br><br>
+
+5. Bouton desactivé :
+<label for="disabledBtn"></label>
+<button id="disabledBtn" type="button" disabled>disabled</button>
+
+<br><br>
+
+6. Bouton avec icône :
+<label for="iconeBtn"></label>
+<button id="iconeBtn" type="button"><i class="fa fa-home"></i>Home</button>
+
+<br><br>
+---------------------------------------------------------------------------
+<br><br>
+
+Bouton associé à JavaScript 1ère méthode :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bouton en javascript</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Cliquer! 001</button>
+
+    <script>
+        function myFunction() {
+            alert("Merci d'avoir cliqué 001 !");
+        }
+    </script>
+</body>
+</html>
+
+<br><br>
+
+---------------------------------------------------------------------------
+<br><br>
+
+Bouton associé à JavaScript 2e méthode :
+
+<br><br>
+
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Button Example</title>
+    </head>
+
+    <body>
+        <button id="myButton">Click 002</button>
+
+        <script>
+            window.onload = function () {
+                document.getElementById("myButton").addEventListener("click", myTwoFunction);
+            }
+
+            function myTwoFunction() {
+                alert("Button clicked 002.");
+            }
+        </script>
+    </body>
+
+    </html>

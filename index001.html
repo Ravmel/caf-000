@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style001.css" />
+    <title>Service boisson</title>
+</head>
+
+<body>
+    <h1>Service Boisson</h1>
+    <img src="images/tasse_de_cafe_001.jpg" alt="tasse de café" />
+
+    <br />
+
+    <form id="formulaire">
+        <label for="options">Boissons Chaudes:</label>
+        <br>
+        <select id="options">
+            <option value="">Sélectionnez une boisson</option>
+
+            <option value="café">Café</option>
+            <option value="Thé">Thé</option>
+            <option value="Lait">Lait</option>
+        </select>
+
+        <button type="button" onclick="validerSelection()">Valider</button>
+    </form>
+
+    <p id="message"></p>
+    <script>
+        function validerSelection() {
+            var selection = document.getElementById("options").value;
+            var message = document.getElementById("message");
+
+            if (selection === "") {
+                message.innerText = "Veuillez sélectionner une boisson s'il vous plaît.";
+            } else {
+                message.innerText = "Vous avez sélectionné : " + selection;
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

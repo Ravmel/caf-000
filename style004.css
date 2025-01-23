@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffcc00;
+}
+
+.bodyCardOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px solid rgb(0, 238, 255);
+}
+
+.title {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.titleOne {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.bodyCardThree {
+    height: 100vh;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-radius: 5px;
+    justify-content: space-between;
+    border: 3px solid #fdd9ac;
+}
+
+.formulaireBoisson {
+    font-size: 2rem;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.7px;
+}
+
+.typeBoisson {
+    font-weight: bold;
+}
+
+.etoile{
+    color: red;
+}
+
+.choix {
+    border-radius: 5px;
+    font-size: 1.8rem;
+    background-color: #fdd9ac;
+}
+
+.temperature {
+    font-weight: bold;
+}
+
+.sucre {
+    font-weight: bold;
+}
+
+.validation {
+    display: flex;
+    justify-content: start;
+    background-color: #fdd9ac;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 2.5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btnValide{
+    background-color: #fdd9ac;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.imageDeco {
+    display: flex;
+    justify-content: center;
+}
+
+.illustrationOne {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
