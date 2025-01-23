@@ -1,0 +1,15 @@
+https://github.com/Ravmel/caf-000.git
+
+
+echo "# caf-000" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ravmel/caf-000.git
+git push -u origin main
+
+
+git remote add origin https://github.com/Ravmel/caf-000.git
+git branch -M main
+git push -u origin main
